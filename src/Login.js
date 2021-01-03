@@ -5,10 +5,11 @@ import { auth } from "./firebase";
 
 function Login() {
 	const history = useHistory();
-	const [email, setEmail] = useState("test@gmail.com");
-	const [password, setPassword] = useState("password");
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
 	const signIn = (e) => {
 		e.preventDefault();
+
 		auth
 			.signInWithEmailAndPassword(email, password)
 			.then((auth) => {
@@ -16,19 +17,20 @@ function Login() {
 			})
 			.catch((error) => alert(error.message));
 	};
+
 	const register = (e) => {
 		e.preventDefault();
+
 		auth
 			.createUserWithEmailAndPassword(email, password)
 			.then((auth) => {
-				console.log(auth);
 				if (auth) {
 					history.push("/");
 				}
 			})
 			.catch((error) => alert(error.message));
-		//firebase
 	};
+
 	return (
 		<div className="login">
 			<Link to="/">
