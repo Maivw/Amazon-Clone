@@ -33,6 +33,7 @@
   width: 98%;
   background-color: #fff;
   outline: none;
+  border: 0.1px solid lightgray;
 }
 .login__container > p {
   margin-top: 15px;
@@ -49,7 +50,10 @@
   height: 30px;
   border-radius: 2px;
   outline: none;
-
+}
+.login__signinButton:hover {
+  background-color:#a88734;
+  color: white;
 }
 .login__registerButton {
   margin: 20px 0;

@@ -59,7 +59,6 @@ function Payment() {
 				});
 				history.replace("/orders");
 			});
-		//do all fancy stripe
 	};
 
 	const handleChange = (e) => {
