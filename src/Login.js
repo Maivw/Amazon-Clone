@@ -5,8 +5,8 @@ import { auth } from "./firebase";
 
 function Login() {
 	const history = useHistory();
-	const [email, setEmail] = useState("");
-	const [password, setPassword] = useState("");
+	const [email, setEmail] = useState("test@gmail.com");
+	const [password, setPassword] = useState("password");
 	const signIn = (e) => {
 		e.preventDefault();
 
@@ -35,7 +35,7 @@ function Login() {
 		<div className="login">
 			<Link to="/">
 				<img
-					src="https://purepng.com/public/uploads/large/amazon-logo-s3f.png"
+					src="https://res.cloudinary.com/maivw/image/upload/v1611941387/amazon-logo-signin_1_ndxvnn.png"
 					alt="logo"
 					className="login__logo"
 				/>

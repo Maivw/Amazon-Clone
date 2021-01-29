@@ -17,7 +17,7 @@ function Header() {
 		<div className="header">
 			<Link to="/">
 				<img
-					src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd24v5oonnj2ncn.cloudfront.net%2Fwp-content%2Fuploads%2F2018%2F10%2F16030301%2FAmazon-Logo-Black.jpg&f=1&nofb=1"
+					src="https://res.cloudinary.com/maivw/image/upload/v1611941186/amazona-logo_n0g8w6.jpg"
 					alt="logo"
 					className="header__logo"
 				/>
